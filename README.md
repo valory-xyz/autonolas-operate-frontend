@@ -1,5 +1,4 @@
-# Autonolas Frontend Template
-Use this template to quickly spin up a Olas-branded frontend.
+# Olas Operate Frontend
 
 ## Tech Stack
 - ReactJS
@@ -25,25 +24,7 @@ Clone down this repository. You will need `node` version `">=18"` and `yarn` ver
 
 `yarn test`
 
-### To Start Server:
-
-- In one terminal:
-
-`node test_server_01.js`
-
-- In another terminal:
-
-`node test_server_02.js`
-
-- In another terminal:
-
-`node test_server_03.js`
-
-- In another terminal:
-
-`yarn dev`
-
-- Then visit the app:
+### Visit the app:
 
 `localhost:3000`
 
