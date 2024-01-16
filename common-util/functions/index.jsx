@@ -1,5 +1,4 @@
-import { GATEWAY_URL } from 'util/constants';
-import { ADDRESSES, RPC_URLS } from 'common-util/Contracts';
+import { RPC_URLS } from 'common-util/Contracts';
 import {
   getProvider as getProviderFn,
   getChainId as getChainIdFn,
@@ -25,23 +24,7 @@ export const sendTransaction = (fn, account) => sendTransactionFn(fn, account, {
   rpcUrls: RPC_URLS,
 });
 
-export const getSupportedNetworks = () => Object.keys(ADDRESSES).map((e) => Number(e));
-
 // Misc Olas-related functions
-
-export const getIpfsResponse = async (hash, filePath) => {
-  try {
-    const ipfsUrl = `${GATEWAY_URL}f01701220${hash.substring(2)}${
-      filePath ? `/${filePath}` : ''
-    }`;
-    const response = await fetch(ipfsUrl);
-    const json = await response.json();
-    return json;
-  } catch (e) {
-    window.console.error('Error fetching metadata from IPFS', e);
-    throw new Error(e);
-  }
-};
 
 // show last element of agentHashes array
 export const getAgentHash = (agentHashes = []) => (agentHashes.length === 0 ? '' : agentHashes[agentHashes.length - 1]);
