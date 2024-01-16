@@ -5,7 +5,7 @@ import {
 import PropTypes from 'prop-types';
 
 import styled from 'styled-components';
-import { COLOR, MEDIA_QUERY } from '@autonolas/frontend-library';
+import { COLOR } from '@autonolas/frontend-library';
 import Link from 'next/link';
 import { Logo } from 'components/Branding/Logo';
 import Login from './Login';

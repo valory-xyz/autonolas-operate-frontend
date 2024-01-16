@@ -1,6 +1,5 @@
 import { Typography } from 'antd';
 import styled from 'styled-components';
-import { OPERATOR_NAME } from 'util/constants';
 
 const { Title } = Typography;
 

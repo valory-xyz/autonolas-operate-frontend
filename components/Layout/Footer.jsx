@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import Link from 'next/link';
 import { Typography } from 'antd';
 import { COLOR } from '@autonolas/frontend-library';
 
