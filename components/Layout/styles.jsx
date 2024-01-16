@@ -5,10 +5,7 @@ import { COLOR, MEDIA_QUERY } from '@autonolas/frontend-library';
 export const CustomLayout = styled(Layout)`
   margin-bottom: 8rem;
   .site-layout {
-    padding: 24px 48px;
-  }
-  .site-layout-background {
-    min-height: calc(100vh - 240px);
+    padding: 100px 24px 24px 24px;
   }
   .mech-tabs {
     .ant-tabs-extra-content {
@@ -38,11 +35,13 @@ export const CustomLayout = styled(Layout)`
 
   ${MEDIA_QUERY.tabletL} {
     .site-layout {
-      padding: 0 24px;
+      padding: 24px;
     }
-    .site-layout-background {
-      padding: 0;
+
+    .column-1 {
+      margin-bottom: 12px;
     }
+    
     .mech-tabs {
       .ant-tabs-nav {
         flex-direction: column;
@@ -65,10 +64,15 @@ export const CustomLayout = styled(Layout)`
     }
   }
 
-  ${MEDIA_QUERY.mobileL} {
+  ${MEDIA_QUERY.mobileS} {
     .site-layout {
-      padding: 0 16px;
+      padding: 24px;
     }
+
+    .column-1 {
+      margin-bottom: 12px;
+    }
+    
     /* footer from autonolas-library */
     main + div {
       flex-direction: column;

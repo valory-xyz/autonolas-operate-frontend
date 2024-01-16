@@ -1,16 +1,3 @@
-import styled from 'styled-components';
+import { Agents } from 'components/Agents';
 
-const Container = styled.div`
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 2rem;
-`;
-
-export const HomePage = () => (
-  <Container>
-    Push the autonomous edge
-  </Container>
-);
+export const HomePage = () => <Agents />;

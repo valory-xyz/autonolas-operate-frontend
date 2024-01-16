@@ -20,7 +20,7 @@ export const Disclaimer = () => (
   <TypographyContainer>
     <Title>Disclaimer</Title>
 
-    <ol>
+    {/* <ol>
       <li>
         This App is owned by and operated by
         {' '}
@@ -61,6 +61,6 @@ export const Disclaimer = () => (
         other advice. Where in doubt as to the action you should take, please
         consult your own legal, financial, tax or other professional advisors.
       </li>
-    </ol>
+    </ol> */}
   </TypographyContainer>
 );

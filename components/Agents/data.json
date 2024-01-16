@@ -1,0 +1,26 @@
+[
+  {
+    "id": "582c485c-a2ba-4c53-8c58-8eb7b34ef87c",
+    "name": "Prediction Agent",
+    "description": "Participates in prediction markets according to your strategy.",
+    "comingSoon": false,
+    "urls": {
+      "run": "https://github.com/valory-xyz/trader-quickstart?tab=readme-ov-file#trader-quickstart",
+      "learnMore": "https://github.com/valory-xyz/trader",
+      "gpt": "https://chat.openai.com/g/g-6y88mEBzS-olas-trader-agent-guide"
+    },
+    "imageFilename": "prediction-agent.png"
+  },
+  {
+    "id": "e1b5b5a0-5b9a-4b9e-9b9a-5b9a4b9e9b9a",
+    "name": "Baby Degen",
+    "description": "Trades on Solana’s Jupiter DEX aggregator. Uses AI tools via Mechs.",
+    "comingSoon": true,
+    "urls": {
+      "run": "",
+      "learnMore": "",
+      "gpt": ""
+    },
+    "imageFilename": "baby-degen.png"
+  }
+]
