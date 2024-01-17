@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import React from 'react';
 import {
   Row, Col, Card, Button, Typography,
 } from 'antd';
