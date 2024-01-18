@@ -46,7 +46,7 @@ const AgentCard = ({ agent }) => {
   const { run, learnMore, gpt } = urls;
 
   return (
-    <Col span={12} key={id} style={{ margin: '0 auto' }}>
+    <Col xs={24} sm={18} md={12} key={id} style={{ margin: '0 auto' }}>
       <StyledCard>
         <StyledImage alt={name} src={`/images/${imageFilename}`} layout="responsive" width={400} height={400} />
         <CardBody>
