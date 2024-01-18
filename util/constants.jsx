@@ -1,6 +1,6 @@
 export const SITE = {
-  URL: 'https://olas.network',
-  TITLE: 'Olas Network',
+  URL: 'https://operate.olas.network',
+  TITLE: 'Olas Operate',
 };
 
-export const OPERATOR_NAME = 'ADD_YOUR_ENTITY_NAME';
+export const OPERATOR_NAME = 'Olas (aka Autonolas) DAO';

@@ -35,6 +35,12 @@ const GlobalStyle = createGlobalStyle`
   .mb-8 {
     margin-bottom: 8px !important;
   }
+  .mb-12 {
+    margin-bottom: 12px !important;
+  }
+  .mb-128 {
+    margin-bottom: 128px !important;
+  }
   .mt-0 {
     margin-top: 0px;
   }
@@ -55,6 +61,9 @@ const GlobalStyle = createGlobalStyle`
   }
   .p-0 {
     padding: 0px !important;
+  }
+  .p-8 {
+    padding: 8px !important;
   }
   .p-16 {
     padding: 16px !important;

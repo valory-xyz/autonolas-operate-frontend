@@ -6,11 +6,6 @@ module.exports = {
   compiler: {
     styledComponents: true,
   },
-  pages: {
-    '*': {
-      maxChunkSize: 30000,
-    },
-  },
   images: {
     domains: [],
   },

@@ -11,15 +11,17 @@ import { wagmiConfig } from 'common-util/Login/config';
 /** antd theme config */
 import Layout from 'components/Layout';
 import GlobalStyle from 'components/GlobalStyles';
-import { SITE_TITLE } from 'util/constants';
+import { SITE } from 'util/constants';
 import initStore from '../store';
+
+const { TITLE } = SITE;
 
 const MyApp = ({ Component, pageProps }) => (
   <>
     <GlobalStyle />
     <Head>
-      <title>{SITE_TITLE}</title>
-      <meta name="title" content={SITE_TITLE} />
+      <title>{TITLE}</title>
+      <meta name="title" content={TITLE} />
     </Head>
     <ConfigProvider theme={THEME_CONFIG}>
       <WagmiConfigProvider config={wagmiConfig}>
