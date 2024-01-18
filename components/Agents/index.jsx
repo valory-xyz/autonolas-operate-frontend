@@ -13,17 +13,29 @@ import agents from './data.json';
 
 const StyledCard = styled(Card)`
   border-color: ${COLOR.BORDER_GREY};
-  width: 100%; /* Make the card fill its container */
+  width: 100%;
   .ant-card-body {
-    padding: 0; /* Apply padding 0 to card body */
+    padding: 0;
   }
 `;
 
+const CardBody = styled.div`
+  padding: 16px;
+`;
+
 const StyledImage = styled(Image)`
+  border-bottom: 1px solid ${COLOR.BORDER_GREY};
   border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  display: block;
+  object-fit: cover;
+`;
+
+const StyledAddImage = styled(StyledImage)`
+  border-top-right-radius: 0px;
   border-bottom-left-radius: 5px;
+  border-bottom: 0;
   border-right: 1px solid ${COLOR.BORDER_GREY};
-  aspect-ratio: 1 / 1;
 `;
 
 const AgentCard = ({ agent }) => {
@@ -34,45 +46,48 @@ const AgentCard = ({ agent }) => {
   const { run, learnMore, gpt } = urls;
 
   return (
-    <Col md={24} lg={12} key={id} style={{ width: '100%' }}>
+    <Col xs={24} sm={12} key={id}>
       <StyledCard>
-        <Row>
-          <Col span={7} className="p-0">
-            <StyledImage alt={name} src={`/images/${imageFilename}`} layout="fill" objectFit="cover" />
-          </Col>
-          <Col span={17} className="p-16">
-            <Typography.Title className="mt-0" level={4}>{name}</Typography.Title>
-            <div className="mb-12">
-              <Typography.Paragraph ellipsis={{ rows: 2, expandable: true }}>
-                {description}
-              </Typography.Paragraph>
-            </div>
-            {comingSoon ? (
-              <div style={{ height: '92px' }}>
-                <Button disabled>Coming soon</Button>
-              </div>
-            ) : (
-              <>
-                {run && (
-                  <Button type="primary" icon={<PlayCircleOutlined />} href={run} target="_blank" className="mb-8">
-                    Run Agent
-                  </Button>
-                )}
-                <br />
-                {learnMore && (
-                  <Button type="default" icon={<GithubOutlined />} href={learnMore} target="_blank" style={{ marginRight: '8px' }}>
-                    Learn More
-                  </Button>
-                )}
-                {gpt && (
-                  <Button type="default" icon={<RobotOutlined />} href={gpt} target="_blank">
-                    GPT Guide
-                  </Button>
-                )}
-              </>
-            )}
-          </Col>
-        </Row>
+        <StyledImage alt={name} src={`/images/${imageFilename}`} layout="responsive" width={400} height={400} />
+        <CardBody>
+          <Typography.Title className="mt-0" level={4}>{name}</Typography.Title>
+          <div className="mb-12">
+            <Typography.Paragraph ellipsis={{ rows: 3, expandable: true }}>
+              {description}
+            </Typography.Paragraph>
+          </div>
+          {comingSoon ? (
+            <Button block disabled>Coming soon</Button>
+          ) : (
+            <>
+              {run && (
+              <Button type="primary" size="large" block icon={<PlayCircleOutlined />} href={run} target="_blank" className="mb-8">
+                Run Agent
+              </Button>
+              )}
+              <br />
+              {learnMore && (
+                <Button
+                  type="default"
+                  block
+                  icon={<GithubOutlined />}
+                  href={learnMore}
+                  target="_blank"
+                  style={{ marginRight: '8px' }}
+                  className="mb-8"
+                >
+                  Learn More
+                </Button>
+              )}
+              {gpt && (
+                <Button type="default" block icon={<RobotOutlined />} href={gpt} target="_blank">
+                  GPT Guide
+                </Button>
+              )}
+            </>
+          )}
+
+        </CardBody>
       </StyledCard>
     </Col>
   );
@@ -113,11 +128,11 @@ export const Agents = () => (
       />
     ))}
     {/* TODO DRY with AgentCard code */}
-    <Col md={24} lg={12} style={{ width: '100%' }}>
+    <Col sm={24} lg={24} style={{ width: '100%' }}>
       <StyledCard bodyStyle={{ padding: 0 }}>
         <Row>
           <Col span={7} className="p-0">
-            <StyledImage alt="baby robot surfing a wave, having an idea" src="/images/add-your-own.png" layout="fill" objectFit="cover" />
+            <StyledAddImage alt="baby robot surfing a wave, having an idea" src="/images/add-your-own.png" layout="fill" objectFit="cover" />
           </Col>
           <Col span={17} className="p-16">
             <Typography.Title className="mt-0" level={4}>
@@ -128,7 +143,9 @@ export const Agents = () => (
               agent?
             </Typography.Title>
             <Typography.Paragraph>
-              Simply submit a pull request.
+              Build an autonomous service using Open Autonomy.
+              {' '}
+              Then, simply submit a pull request including the quickstart.
             </Typography.Paragraph>
             <Button
               type="default"

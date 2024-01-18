@@ -14,7 +14,7 @@
   {
     "id": "e1b5b5a0-5b9a-4b9e-9b9a-5b9a4b9e9b9a",
     "name": "Baby Degen",
-    "description": "Trades on Solana’s Jupiter DEX aggregator. Uses AI tools via Mechs.",
+    "description": "Trades on Solana’s Jupiter DEX aggregator using customizable strategies.",
     "comingSoon": true,
     "urls": {
       "run": "",
