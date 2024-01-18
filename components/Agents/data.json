@@ -10,17 +10,5 @@
       "gpt": "https://chat.openai.com/g/g-6y88mEBzS-olas-trader-agent-guide"
     },
     "imageFilename": "prediction-agent.png"
-  },
-  {
-    "id": "e1b5b5a0-5b9a-4b9e-9b9a-5b9a4b9e9b9a",
-    "name": "Baby Degen",
-    "description": "Trades on Solana’s Jupiter DEX aggregator using customizable strategies.",
-    "comingSoon": true,
-    "urls": {
-      "run": "",
-      "learnMore": "",
-      "gpt": ""
-    },
-    "imageFilename": "baby-degen.png"
   }
 ]
