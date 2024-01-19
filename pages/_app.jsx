@@ -18,6 +18,8 @@ const {
   TITLE, DESCRIPTION, URL,
 } = SITE;
 
+const SITE_IMAGE_URL = `${URL}/images/metatags-image.png`;
+
 const MyApp = ({ Component, pageProps }) => (
   <>
     <GlobalStyle />
@@ -32,14 +34,14 @@ const MyApp = ({ Component, pageProps }) => (
       <meta property="og:url" content={URL} />
       <meta property="og:title" content={TITLE} />
       <meta property="og:description" content={DESCRIPTION} />
-      <meta property="og:image" content="https://operate.olas.network/images/metatags-image.jpg" />
+      <meta property="og:image" content={SITE_IMAGE_URL} />
 
       {/* <!-- Twitter --> */}
       <meta property="twitter:card" content="summary_large_image" />
       <meta property="twitter:url" content={URL} />
       <meta property="twitter:title" content={TITLE} />
       <meta property="twitter:description" content={DESCRIPTION} />
-      <meta property="twitter:image" content="https://operate.olas.network/images/metatags-image.jpg" />
+      <meta property="twitter:image" content={SITE_IMAGE_URL} />
     </Head>
     <ConfigProvider theme={THEME_CONFIG}>
       <WagmiConfigProvider config={wagmiConfig}>
