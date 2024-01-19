@@ -32,14 +32,14 @@ const MyApp = ({ Component, pageProps }) => (
       <meta property="og:url" content={URL} />
       <meta property="og:title" content={TITLE} />
       <meta property="og:description" content={DESCRIPTION} />
-      <meta property="og:image" content={IMAGE_PATH} />
+      <meta property="og:image" content="https://operate.olas.network/images/metatags-image.jpg" />
 
       {/* <!-- Twitter --> */}
       <meta property="twitter:card" content="summary_large_image" />
       <meta property="twitter:url" content={URL} />
       <meta property="twitter:title" content={TITLE} />
       <meta property="twitter:description" content={DESCRIPTION} />
-      <meta property="twitter:image" content={IMAGE_PATH} />
+      <meta property="twitter:image" content="https://operate.olas.network/images/metatags-image.jpg" />
     </Head>
     <ConfigProvider theme={THEME_CONFIG}>
       <WagmiConfigProvider config={wagmiConfig}>
