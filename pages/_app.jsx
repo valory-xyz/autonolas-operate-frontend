@@ -15,7 +15,7 @@ import { SITE } from 'util/constants';
 import initStore from '../store';
 
 const {
-  TITLE, DESCRIPTION, IMAGE_PATH, URL,
+  TITLE, DESCRIPTION, URL,
 } = SITE;
 
 const MyApp = ({ Component, pageProps }) => (
