@@ -31,3 +31,8 @@ Clone down this repository. You will need `node` version `">=18"` and `yarn` ver
 ### To build:
 
 `yarn run build`
+
+## Add your own agent
+
+- First, create an agent using [Open Autonomy](https://docs.autonolas.network/open-autonomy/). Use existing agents as a template.
+- Then, submit a PR to this repository, adding your agent to components/Agents/data.json

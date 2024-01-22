@@ -150,7 +150,7 @@ export const Agents = () => (
             <Button
               type="default"
               icon={<BulbFilled />}
-              href="https://github.com/valory-xyz/autonolas-operate-frontend/blob/main/components/Agents/agents.json"
+              href="https://github.com/valory-xyz/autonolas-operate-frontend?tab=readme-ov-file#add-your-own-agent"
               target="_blank"
               rel="noopener noreferrer"
             >
