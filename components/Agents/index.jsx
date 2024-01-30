@@ -4,7 +4,7 @@ import {
 } from 'antd';
 import PropTypes from 'prop-types';
 import {
-  PlayCircleOutlined, GithubOutlined, BulbFilled, RobotOutlined,
+  PlayCircleOutlined, BulbFilled, RobotOutlined,
 } from '@ant-design/icons';
 import Image from 'next/image';
 
@@ -70,7 +70,6 @@ const AgentCard = ({ agent }) => {
                 <Button
                   type="default"
                   block
-                  icon={<GithubOutlined />}
                   href={learnMore}
                   target="_blank"
                   style={{ marginRight: '8px' }}
