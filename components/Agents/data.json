@@ -6,7 +6,7 @@
     "comingSoon": false,
     "urls": {
       "run": "https://github.com/valory-xyz/trader-quickstart?tab=readme-ov-file#trader-quickstart",
-      "learnMore": "https://olas.network/services/prediction-agent",
+      "learnMore": "https://olas.network/services/prediction-agents",
       "gpt": "https://chat.openai.com/g/g-6y88mEBzS-olas-trader-agent-guide"
     },
     "imageFilename": "prediction-agent.png"
